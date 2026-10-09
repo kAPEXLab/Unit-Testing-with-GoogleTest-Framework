@@ -1,4 +1,4 @@
-# Lab 1: Creating and Executing Your First GoogleTest
+﻿# Lab 1: Creating and Executing Your First GoogleTest
 
 ## Objective
 
@@ -32,10 +32,10 @@ Create the following files inside your workspace:
 
 ```text
 gtest/
-├── add.h
-├── add.c
+├── arithmetic.h
+├── arithmetic.c
 ├── main.c
-└── test_add.cpp
+└── test_arithmetic.cpp
 ```
 
 ---
@@ -45,18 +45,18 @@ gtest/
 Create a file named:
 
 ```text
-add.h
+arithmetic.h
 ```
 
 Contents:
 
 ```c
-#ifndef ADD_H
-#define ADD_H
+#ifndef arithmetic_H
+#define arithmetic_H
 
 /*
 
-Header file for add.c
+Header file for arithmetic.c
 
 This file contains the function declaration that
 can be used by multiple source files.
@@ -90,13 +90,13 @@ int add(int a, int b);
 Create a file named:
 
 ```text
-add.c
+arithmetic.c
 ```
 
 Contents:
 
 ```c
-#include "add.h"
+#include "arithmetic.h"
 
 /*
  * Function Name : add
@@ -124,7 +124,7 @@ int add(int a, int b)
 Create a file named:
 
 ```text
-test_add.cpp
+test_arithmetic.cpp
 ```
 
 Contents:
@@ -147,7 +147,7 @@ Contents:
  * The header already contains the required
  * extern "C" guard.
  */
-#include "add.h"
+#include "arithmetic.h"
 
 /*
  * Test Suite  : AddTest
@@ -250,7 +250,7 @@ If both values are equal, the test passes.
 Compile the C source file:
 
 ```bash
-gcc -c add.c -o add.o
+gcc -c arithmetic.c -o arithmetic.o
 ```
 
 Verify:
@@ -262,21 +262,21 @@ ls
 Expected:
 
 ```text
-add.o
+arithmetic.o
 ```
 
 ---
 
 ## Step 5: Build the Test Executable
 
-Compile and link the test executable:
+Compile and link the test executable:s
 
 ```bash
-g++ test_add.cpp add.o \
+g++ test_arithmetic.cpp arithmetic.o \
     -lgtest \
     -lgtest_main \
     -pthread \
-    -o test_add
+    -o test_arithmetic
 ```
 
 Verify:
@@ -288,7 +288,7 @@ ls
 Expected:
 
 ```text
-test_add
+test_arithmetic
 ```
 
 ---
@@ -298,7 +298,7 @@ test_add
 Run:
 
 ```bash
-./test_add
+./test_arithmetic
 ```
 
 Expected Output:
@@ -372,17 +372,17 @@ TEST(AddTest, AddLargeNumbers)
 Build again:
 
 ```bash
-g++ test_add.cpp add.o \
+g++ test_arithmetic.cpp arithmetic.o \
     -lgtest \
     -lgtest_main \
     -pthread \
-    -o test_add
+    -o test_arithmetic
 ```
 
 Execute:
 
 ```bash
-./test_add
+./test_arithmetic
 ```
 
 Sample Output:
@@ -427,7 +427,7 @@ g++
 ### 4. Which command executes the tests?
 
 ```bash
-./test_add
+./test_arithmetic
 ```
 
 ---
@@ -444,8 +444,8 @@ g++
 
 Lab 1 is complete when:
 
-- `add.c` compiles successfully
-- `test_add.cpp` compiles successfully
+- `arithmetic.c` compiles successfully
+- `test_arithmetic.cpp` compiles successfully
 - Test executable is generated
 - All four test cases pass successfully
 - You intentionally create one failing test and observe the failure report

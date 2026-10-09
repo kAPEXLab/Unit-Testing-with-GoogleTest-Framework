@@ -1,18 +1,66 @@
 [
   {
     "file": "lab0.md",
-    "title": "Installation and Setup"
+    "title": "Lab 0: Installation and Setup"
   },
-    {
+  {
     "file": "lab1.md",
-    "title": "EXPECT_EQ"
+    "title": "Lab 1: EXPECT_EQ"
   },
-    {
+  {
     "file": "lab2.md",
-    "title": "EXPECT_TRUE and EXPECT_FALSE"
+    "title": "Lab 2: EXPECT_TRUE and EXPECT_FALSE"
   },
-    {
+  {
     "file": "lab3.md",
-    "title": "q4"
+    "title": "Lab 3: ASSERT_EQ and ASSERT_NE"
+  },
+  {
+    "file": "lab4.md",
+    "title": "Lab 4: Floating-Point Testing"
+  },
+  {
+    "file": "lab5.md",
+    "title": "Lab 5: Test Suite Organisation"
+  },
+  {
+    "file": "lab6.md",
+    "title": "Lab 6: Multiple Assertions in a Test"
+  },
+  {
+    "file": "lab7.md",
+    "title": "Lab 7: Relational Assertions"
+  },
+  {
+    "file": "lab8.md",
+    "title": "Lab 8: String Assertions"
+  },
+  {
+    "file": "lab9.md",
+    "title": "Lab 9: Fixtures (TEST_F)"
+  },
+  {
+    "file": "lab10.md",
+    "title": "Lab 10: Parameterized Tests (TEST_P)"
+  },
+  {
+    "file": "lab11.md",
+    "title": "Lab 11: Safe Exit and Failure Conditions"
+  },
+  {
+    "file": "lab12.md",
+    "title": "Lab 12: Type-Parameterized Tests"
+  },
+  {
+    "file": "lab13.md",
+    "title": "Lab 13: Death Tests"
+  },
+  {
+    "file": "lab14.md",
+    "title": "Lab 14: Custom Test Messages"
+  },
+  {
+    "file": "lab15.md",
+    "title": "Lab 15: Test Filtering & Execution Options"
   }
 ]

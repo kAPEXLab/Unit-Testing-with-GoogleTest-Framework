@@ -33,7 +33,7 @@ function renderDocumentList() {
 
   elements.list.innerHTML = visibleDocuments.map((document) => `
     <a class="document-link${document.file === state.selected ? " active" : ""}" href="?doc=${encodeURIComponent(document.file)}" data-file="${escapeHtml(document.file)}">
-      <strong>${escapeHtml(document.file)}</strong>
+      <strong>${escapeHtml(document.title)}</strong>
     </a>
   `).join("");
   elements.empty.hidden = visibleDocuments.length > 0;

@@ -1,4 +1,4 @@
-# Lab 2: Using `EXPECT_TRUE()` and `EXPECT_FALSE()`
+﻿# Lab 2: Using `EXPECT_TRUE()` and `EXPECT_FALSE()`
 
 ## Objective
 
@@ -27,10 +27,10 @@ Before starting this lab:
 
 ```text
 gtest/
-├── add.h
-├── add.c
-├── add.o
-└── test_add.cpp
+├── arithmetic.h
+├── arithmetic.c
+├── arithmetic.o
+└── test_arithmetic.cpp
 ```
 
 ---
@@ -66,7 +66,7 @@ EXPECT_FALSE()
 
 ---
 
-## Step 1: Open `test_add.cpp`
+## Step 1: Open `test_arithmetic.cpp`
 
 Add the following new test cases below the existing test cases.
 
@@ -194,11 +194,11 @@ TEST(AddTest, ResultNotZero)
 
 ---
 
-## Complete `test_add.cpp` After Lab 2
+## Complete `test_arithmetic.cpp` After Lab 2
 
 ```cpp
 #include <gtest/gtest.h>
-#include "add.h"
+#include "arithmetic.h"
 
 /*
  * Verifies addition of
@@ -278,11 +278,11 @@ TEST(AddTest, ResultNotZero)
 ## Step 2: Build the Test Executable
 
 ```bash
-g++ test_add.cpp add.o \
+g++ test_arithmetic.cpp arithmetic.o \
     -lgtest \
     -lgtest_main \
     -pthread \
-    -o test_add
+    -o test_arithmetic
 ```
 
 ---
@@ -290,7 +290,7 @@ g++ test_add.cpp add.o \
 ## Step 3: Execute the Tests
 
 ```bash
-./test_add
+./test_arithmetic
 ```
 #### Expected Output
 
@@ -333,13 +333,13 @@ TEST(AddTest, ResultGreaterThanHundred)
 Build and execute the test again:
 
 ```bash
-g++ test_add.cpp add.o \
+g++ test_arithmetic.cpp arithmetic.o \
     -lgtest \
     -lgtest_main \
     -pthread \
-    -o test_add
+    -o test_arithmetic
 
-./test_add
+./test_arithmetic
 ```
 
 ### Expected Failure
